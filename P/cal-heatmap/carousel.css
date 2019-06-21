@@ -1,0 +1,108 @@
+.column {
+  float: left;
+  width: 45%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.scene {
+  width: 90px;
+  height: 60px;
+  position: relative;
+  margin: 350px 100px 200px 150px;
+  border: 1px solid #CCC;
+  perspective: 600px;
+  z-index: -100;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(-392px) rotateX(-5deg);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 90px;
+  height: 60px;
+  left: 10px;
+  top: 10px;
+  border: 2px solid black;
+  line-height: 55px;
+  font-size: 40px;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+  color: white;
+  text-align: center;
+  transition: transform 1s, opacity 1s;
+}
+
+.carousel__cell:nth-child(24n+1)  { background: hsla(150, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+2)  { background: hsla(115, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+3)  { background: hsla( 87, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+4)  { background: hsla(141, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+5)  { background: hsla( 69, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+6)  { background: hsla( 57, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+7)  { background: hsla( 70, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+8)  { background: hsla( 25, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+9)  { background: hsla(  5, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+10) { background: hsla( 22, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+11) { background: hsla(  3, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+12) { background: hsla( 40, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+13) { background: hsla( 58, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+14) { background: hsla( 61, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+15) { background: hsla( 98, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+16) { background: hsla(108, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+17) { background: hsla(156, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+18) { background: hsla(150, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+19) { background: hsla(161, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+20) { background: hsla(198, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+21) { background: hsla(237, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+22) { background: hsla(205, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+23) { background: hsla(182, 100%, 50%, .5); }
+.carousel__cell:nth-child(24n+0)  { background: hsla(188, 100%, 50%, .5); }
+
+.carousel__cell:nth-child(1)  { transform: rotateY(  0deg) translateZ(392px); }
+.carousel__cell:nth-child(2)  { transform: rotateY( 30deg) translateZ(392px); }
+.carousel__cell:nth-child(3)  { transform: rotateY( 60deg) translateZ(392px); }
+.carousel__cell:nth-child(4)  { transform: rotateY( 90deg) translateZ(392px); }
+.carousel__cell:nth-child(5)  { transform: rotateY(120deg) translateZ(392px); }
+.carousel__cell:nth-child(6)  { transform: rotateY(150deg) translateZ(392px); }
+.carousel__cell:nth-child(7)  { transform: rotateY(180deg) translateZ(392px); }
+.carousel__cell:nth-child(8)  { transform: rotateY(210deg) translateZ(392px); }
+.carousel__cell:nth-child(9)  { transform: rotateY(240deg) translateZ(392px); }
+.carousel__cell:nth-child(10) { transform: rotateY(270deg) translateZ(392px); }
+.carousel__cell:nth-child(11) { transform: rotateY(300deg) translateZ(392px); }
+.carousel__cell:nth-child(12) { transform: rotateY(330deg) translateZ(392px); }
+
+.carousel-options {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background: hsla(0, 0%, 100%, .8);
+}
+
+.btn {
+  background-color: LightYellow;
+  border: 4px solid NavajoWhite;
+  color: black;
+  padding: 4px 4px;
+  font: small "Courier New", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+}
