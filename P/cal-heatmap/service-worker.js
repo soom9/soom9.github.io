@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/P/cal-heatmap/precache-manifest.5b48504b18e5820e00f207bd77cff75e.js"
+  "/P/cal-heatmap/precache-manifest.ea2cb585b9d00c158934f724c901066e.js"
 );
 
 workbox.clientsClaim();
